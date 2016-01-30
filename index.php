@@ -44,7 +44,7 @@
       </div>
       <div class="section" id="input-text">
 	<div class="row">
-	  <div class="col-sm-12 col-md-offset-3 col-md-6">
+	  <div class="col-sm-12 col-md-offset-2 col-md-8">
 	    <div class="panel panel-default">
 	      <div class="panel-heading">
 		<i class="fa fa-file-text-o"></i>
@@ -53,7 +53,8 @@
 	      <div class="panel-body">
 		<textarea id="ta-text"
 			  class="form-control"
-			  rows="15"></textarea>
+			  rows="15"
+              placeholder="Ad es: Rasoio del camoscio"></textarea>
 	      </div>
 	    </div>
 	  </div>
@@ -70,7 +71,7 @@
 
       <div class="section hide" id="output-resp">
 	<div class="row">
-	  <div class="col-sm-12 col-md-offset-3 col-md-6">
+	  <div class="col-sm-12 col-md-offset-2 col-md-8">
 	    <div class="panel panel-default">
 	      <div class="panel-heading">
 		<i class="fa fa-comment"></i>
@@ -114,7 +115,7 @@
               <h4>Un attimo di pazienza... <i class="fa fa-smile-o"></i>
 	      </h4>
 	      <div class="progress">
-		<div class="progress-bar" id="progress"
+		<div class="progress-bar progress-bar-striped active" id="progress"
 		     role="progressbar"
 		     aria-valuenow="0"
 		     aria-valuemin="0"

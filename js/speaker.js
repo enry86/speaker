@@ -30,8 +30,8 @@ var currentTask = {
 	    return 0;
 	else {
 	    var res = this.processed_words / this.words.length;
-	    res = Math.floor(res);
-	    return res*100;
+	    res = Math.floor(res * 100);
+	    return res;
 	}
     }
 };
@@ -258,6 +258,7 @@ function resetTask () {
     $('#div-res').empty();
     $('#output-resp').addClass('hide');
     $('#input-text').removeClass('hide');
+    $('#ta-text').focus();
 }
 
 
@@ -271,4 +272,6 @@ $(document).ready(function() {
     $('#btn-translate').click(translate);
     $('#btn-back').click(resetTask);
     $('#word-title').click(handlerAudio);
+    $('#ta-text').focus(function() {$(this).select()})
+    $('#ta-text').focus();
 });
