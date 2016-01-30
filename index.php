@@ -53,7 +53,7 @@
 	      <div class="panel-body">
 		<textarea id="ta-text"
 			  class="form-control"
-			  rows="15"
+			  rows="10"
               placeholder="Ad es: Rasoio del camoscio"></textarea>
 	      </div>
 	    </div>
