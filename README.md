@@ -11,6 +11,16 @@ tutte le parole che compongono un testo.
 
 Figo eh?
 
+Al momento potete vedere l'applicazione in azione su OpenShift
+a quest'indirizzo:
+(speaker-enrylab.rhcloud.com)[http://speaker-enrylab.rhcloud.com].
+Tutta la broda nella directory .openshift arriva appunto dal repository
+OpenShift che ho aperto per mettere li il servizio, quindi non fa parte
+dell'applicazione in se.
+
+Come funziona sta roba?
+-----------------------
+
 Per facilitarmi un po' la vita ho scelto di utilizzare
 [WordReference.com](http://wordreference.com/definizione)
 come dizionario di base.
