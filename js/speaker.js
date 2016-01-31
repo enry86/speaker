@@ -9,6 +9,8 @@ var MULTI_DEF_CLASS = '.definition';
 
 var separators = [',',' ',';','\\.','\\!','\\?','\\n','\\"','\\\''];
 var separators_str = ', ;.!?\n"\'';
+var first_use = true;
+var first_play = true;
 
 var currentTask = {
     words : [],
@@ -105,6 +107,9 @@ function completeTask() {
 	$('#div-res').append(elem);
     }
 
+    if (first_use)
+	$('#div-res').tooltip('show');
+    first_use = false;
     $('.translated').click(loadDefinition);
 }
 
@@ -162,6 +167,7 @@ function processRes(data) {
 }
 
 function loadDefinition() {
+    $('#div-res').tooltip('hide');
     var cont = $('#definitions');
     cont.empty();
     var elem = $(this);
@@ -188,9 +194,15 @@ function loadDefinition() {
 	$('#word-title').append(icon);
     }
     $('#def-modal').modal();
+    $('#def-modal').on('shown.bs.modal', function (e) {
+	if (first_play)
+	    $('#word-title').tooltip('show');
+    });
 }
 
 function handlerAudio() {
+    $('#word-title').tooltip('hide');
+    first_play = false;
     var elem = $(this);
     var idw = elem.attr('data-id-word');
     if (idw != null || idw != "") {
@@ -274,4 +286,16 @@ $(document).ready(function() {
     $('#word-title').click(handlerAudio);
     $('#ta-text').focus(function() {$(this).select()})
     $('#ta-text').focus();
+    $('#div-res').tooltip({
+	title: 'Clicca sulle parole per leggere il significato'
+    });
+    $('#word-title').tooltip({
+	html:true,
+	title: 'Quando è presente il simbolo <i class="fa fa-volume-up"></i> puoi ascoltare la pronuncia cliccando sulla parola',
+	placement: 'bottom'
+	
+    });
+    $('#def-modal').click(function() {
+	$('#word-title').tooltip('hide');
+    });
 });
