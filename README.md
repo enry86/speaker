@@ -12,7 +12,7 @@ tutte le parole che compongono un testo.
 Figo eh?
 
 Per facilitarmi un po' la vita ho scelto di utilizzare
-[http://wordreference.com/definizione]
+[WordReference.com](http://wordreference.com/definizione)
 come dizionario di base.
 Utilizzare il DOP sarebbe stato un mezzo dramma, per via
 di una serie di succulenti dettagli tecnici che vi risparmio.
