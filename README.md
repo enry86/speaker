@@ -13,7 +13,7 @@ Figo eh?
 
 Al momento potete vedere l'applicazione in azione su OpenShift
 a quest'indirizzo:
-(speaker-enrylab.rhcloud.com)[http://speaker-enrylab.rhcloud.com].
+[speaker-enrylab.rhcloud.com](http://speaker-enrylab.rhcloud.com).
 Tutta la broda nella directory .openshift arriva appunto dal repository
 OpenShift che ho aperto per mettere li il servizio, quindi non fa parte
 dell'applicazione in se.
